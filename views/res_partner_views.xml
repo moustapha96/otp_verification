@@ -1,0 +1,15 @@
+<odoo>
+    <record id="view_partner_form_otp" model="ir.ui.view">
+        <field name="name">res.partner.form.otp</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//form/sheet" position="inside">
+                <group>
+                    <field name="otp_verified" readonly="1" />
+                    <button name="send_otp" type="object" string="Send OTP" class="oe_highlight" />
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>
