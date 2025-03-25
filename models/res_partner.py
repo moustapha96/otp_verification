@@ -187,7 +187,7 @@ class ResPartner(models.Model):
       
         email_from = mail_server.smtp_user
         additional_email = 'shop@ccbm.sn'
-        email_to = f'{recipient}, {additional_email}'
+        email_to = f'{recipient},{additional_email}'
         email_values = {
             'email_from': email_from,
             'email_to': email_to,
