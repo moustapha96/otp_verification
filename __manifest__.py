@@ -6,10 +6,10 @@
     'summary': 'Vérification OTP pour les partenaires par SMS',
     'description': 'Ce module permet la vérification OTP des partenaires par SMS.',
     'author': 'Al hussein KHOUMA',
-    'depends': ['base', 'contacts','mail'],
+    'depends': ['base', 'contacts'],
     'data': [
         'security/ir.model.access.csv',
-        'views/res_partner_views.xml',
+        # 'views/res_partner_views.xml',
     ],
     'installable': True,
     'application': False,
