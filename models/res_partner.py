@@ -7,6 +7,8 @@ class ResPartner(models.Model):
     _inherit = 'res.partner'
 
     otp_verified = fields.Boolean(string='OTP vérification', default=False)
+    otp_code_ids = fields.One2many('otp.code', 'partner_id', string="Codes OTP")
+
 
 
     # ajoute pour voir le code
